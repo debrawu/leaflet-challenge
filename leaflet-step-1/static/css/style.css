@@ -3,8 +3,16 @@ body {
   margin: 0;
 }
 
-#map,
+#mapid,
 body,
 html {
   height: 100%;
+}
+
+.legend {
+  padding: 10px; 
+  line-height: 18px; 
+  color: #555;
+  background-color: #fff;
+  border-radius: 5px;
 }
