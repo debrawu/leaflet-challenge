@@ -53,7 +53,7 @@ function createMap(layerGroup) {
 // color of markers should reflect depth of quakes, darker color = greater depth 
 // function setColor(){
 //    switch feature['geometry']['coordinates'][2]
-//}
+// }
 // include pop ups for each marker when clicked with information 
 
 // create a legend
@@ -65,6 +65,7 @@ legend.onAdd=function(){
     legendDiv=L.DomUtil.create('div', 'legend');
     // create rectangles to represent each "color"
     // under each rectangle would be the range of values
+    // forEach
     legendDiv.innerHTML='TEST'
     return legendDiv;
 };
