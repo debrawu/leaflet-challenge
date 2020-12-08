@@ -39,7 +39,7 @@ function createMap(data) {
     // Adding tile layer
     L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
         maxZoom: 18,
-        id: "streets-v11",
+        id: "light-v10",
         accessToken: API_KEY
     }).addTo(myMap);
 
