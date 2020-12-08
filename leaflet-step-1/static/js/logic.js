@@ -112,8 +112,8 @@ function createMap(data) {
 
     // create a legend
     var legend=L.control({
-    position: 'bottomright'
-    });
+        position: 'bottomright'
+        })//.addTo(myMap);
 
     legend.onAdd=function(){
         legendDiv=L.DomUtil.create('div', 'legend');
@@ -125,10 +125,9 @@ function createMap(data) {
         // forEach
         for (var i=0; i <colors.length; i++){
             legendDiv.innerHTML +=
-            '<li style="background-color:'+ colors [i] + '">' + range[i] + '</li>'
-
+            '<li style="background-color:'+ colors[i] + '">' + range[i] + '</li> <br>'
         }
-    
         return legendDiv;
-    }.addTo(myMap)
+    }
+    legend.addTo(myMap)
 };
